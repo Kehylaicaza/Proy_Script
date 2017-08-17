@@ -9,7 +9,7 @@ var ImPreguntas2= [];
 var ArrPreg=[];
 
 var idCuento = 5;
-//esto es para que aparezcan en la pagina Verhistorias como predeterminado
+//esto es para que aparezcan en la pagina Verhistorias como predeterminadas
 
 function leer() {
     var usuarios2 = [];
@@ -277,8 +277,10 @@ $(document).ready(function () {
     $('#imagen').change(function () {
         //obtenemos un array con los datos del archivo
         var file = $("#imagen")[0].files[0];
+        alert(file);
         //obtenemos el nombre del archivo
         var fileName = file.name;
+         alert(fileName);
         //obtenemos la extensión del archivo
         fileExtension = fileName.substring(fileName.lastIndexOf('.') + 1);
         //obtenemos el tamaño del archivo
@@ -338,14 +340,17 @@ $(document).ready(function () {
     
     $(".messages").hide();
     //queremos que esta variable sea global
-    var fileExtension = "";
-    var fileName="";
+    //var fileExtension = "";
+    //var fileName="";
     //función que observa los cambios del campo file y obtiene información
     $('#audios').change(function () {
+       
         //obtenemos un array con los datos del archivo
         var file = $("#audios")[0].files[0];
+         alert(file);
         //obtenemos el nombre del archivo
         fileName = file.name;
+        alert(fileName);
         //obtenemos la extensión del archivo
         fileExtension = fileName.substring(fileName.lastIndexOf('.') + 1);
         //obtenemos el tamaño del archivo
@@ -538,5 +543,7 @@ function guardarPreguntas(){
         console.log(ImPreguntas2);
         console.log(cue);
 }
+
+
 
 
