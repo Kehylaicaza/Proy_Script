@@ -9,7 +9,7 @@ var ImPreguntas2= [];
 var ArrPreg=[];
 
 var idCuento = 5;
-//esto es para que aparezcan en la pagina Verhistorias como predeterminadas
+//esto es para que aparezcan en la pagina Verhistorias como predeterminado
 
 function leer() {
     var usuarios2 = [];
