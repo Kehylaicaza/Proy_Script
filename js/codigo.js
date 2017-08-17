@@ -274,7 +274,7 @@ $(document).ready(function () {
     //queremos que esta variable sea global
     var fileExtension = "";
     //función que observa los cambios del campo file y obtiene información
-    $(':file').change(function () {
+    $('#imagen').change(function () {
         //obtenemos un array con los datos del archivo
         var file = $("#imagen")[0].files[0];
         //obtenemos el nombre del archivo
@@ -341,7 +341,7 @@ $(document).ready(function () {
     var fileExtension = "";
     var fileName="";
     //función que observa los cambios del campo file y obtiene información
-    $(':file').change(function () {
+    $('#audios').change(function () {
         //obtenemos un array con los datos del archivo
         var file = $("#audios")[0].files[0];
         //obtenemos el nombre del archivo
